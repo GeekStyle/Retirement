@@ -34,7 +34,7 @@ public class Retirement {
 			initialYear++;
 		}
 		
-		basicMonthlyPayout =  averageLocalSalary * (1 + 2)/2 * (retirementAge - initialAge) * 0.01;
+		basicMonthlyPayout =  averageLocalSalary * (1 + initialSalary/averageLocalSalary)/2 * (retirementAge - initialAge) * 0.01;
 		personalMonthlyPayout = totalPersonalPension/totalPayoutMonth;
 		totalMonthlyPayout = basicMonthlyPayout + personalMonthlyPayout;
 		
